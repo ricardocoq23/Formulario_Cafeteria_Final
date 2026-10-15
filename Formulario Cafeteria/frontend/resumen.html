@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de tu pedido | Cafetería</title>
+    <link rel="stylesheet" href="css/resumen.css">
+</head>
+<body>
+    <main class="pagina-resumen">
+        <header class="marca">
+            <div class="marca-icono" aria-hidden="true">☕</div>
+            <div>
+                <p class="marca-nombre">CAFETERÍA</p>
+                <p class="marca-subtitulo">RESUMEN DE PEDIDO</p>
+            </div>
+        </header>
+
+        <section class="tarjeta-resumen" aria-labelledby="titulo-resumen">
+            <div class="confirmacion">
+                <div class="check" aria-hidden="true">✓</div>
+                <p class="etiqueta-confirmacion">PEDIDO REGISTRADO</p>
+                <h1 id="titulo-resumen">¡Gracias por tu compra!</h1>
+                <p class="texto-confirmacion">Recibimos los datos de tu pedido correctamente.</p>
+            </div>
+
+            <div class="contenido-resumen">
+                <div class="seccion-titulo">
+                    <h2>Datos del cliente</h2>
+                    <span class="punto-decorativo" aria-hidden="true"></span>
+                </div>
+                <div class="datos-cliente">
+                    <div class="dato">
+                        <span class="dato-etiqueta">Nombre</span>
+                        <strong id="cliente">—</strong>
+                    </div>
+                    <div class="dato">
+                        <span class="dato-etiqueta">Correo electrónico</span>
+                        <strong id="correo">—</strong>
+                    </div>
+                </div>
+
+                <div class="seccion-titulo seccion-producto">
+                    <h2>Detalle del pedido</h2>
+                    <span class="punto-decorativo" aria-hidden="true"></span>
+                </div>
+                <div class="detalle-producto">
+                    <div class="producto-icono" aria-hidden="true">☕</div>
+                    <div class="producto-info">
+                        <span class="dato-etiqueta">Producto seleccionado</span>
+                        <strong id="producto">—</strong>
+                    </div>
+                    <div class="cantidad-badge">x<span id="cantidad">—</span></div>
+                </div>
+                <div class="resumen-opciones">
+                    <div class="opcion">
+                        <span class="dato-etiqueta">Tamaño</span>
+                        <strong id="tamanio">—</strong>
+                    </div>
+                    <div class="opcion">
+                        <span class="dato-etiqueta">Modalidad</span>
+                        <strong id="llevar">—</strong>
+                    </div>
+                </div>
+
+                <div class="observaciones">
+                    <span class="dato-etiqueta">Tus observaciones</span>
+                    <p id="observacion">—</p>
+                </div>
+
+                <div class="pie-resumen">
+                    <p><strong>¡Listo!</strong> Puedes realizar otro pedido cuando quieras.</p>
+                    <a href="/" class="btn-volver">Hacer otro pedido <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+        <footer class="pie-pagina">Gracias por elegir nuestra cafetería.</footer>
+    </main>
+    <script src="js/scriptt.js"></script>
+</body>
+</html>
